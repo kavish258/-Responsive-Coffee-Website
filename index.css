@@ -73,6 +73,9 @@ img{
 /*  navbar styling */
 
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background: var(--primary-color);
 }
 
@@ -107,4 +110,19 @@ header .navbar{
 .navbar .nav-menu .nav-link:hover{
     color: var(--primary-color);
     background: var(--secondary-color);
+}
+
+
+.hero-section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
 }
