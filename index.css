@@ -249,6 +249,7 @@ header .navbar{
 .menu-section{
     color: var(--white-color);
     background: var(--dark-color);
+    padding: 50px 0 100px;
 }
 .menu-section .menu-list {
     display: flex;
@@ -278,6 +279,9 @@ header .navbar{
     margin: 12px 0;
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-semibold);
+}
+.menu-section .menu-list .menu-items .text{
+    font-size: var(--font-size-m);
 }
 
 @media screen and (max-width:1024px) {
@@ -384,5 +388,23 @@ header .navbar{
         height: 100%;
         max-width: 250px;
         aspect-ratio: 1;
+    }
+    .menu-section .menu-list{
+        gap: 30px;
+    }
+    .menu-section .menu-list .menu-items{
+        width: calc(100% / 2 - 30px);
+    }
+    .menu-section .menu-list .menu-items .menu-image{
+        max-width: 200px;
+    }
+}
+
+@media screen  and (max-width: 640px){
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+    .menu-section .menu-list .menu-items{
+        width: 100%;
     }
 }
