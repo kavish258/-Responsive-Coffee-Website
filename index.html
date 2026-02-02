@@ -7,6 +7,8 @@
     <!--linking font awesome for icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <!--linking swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" >
 </head>
 <body>
     <header>
@@ -127,36 +129,48 @@
         <section class="testimonials-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slider-container">
+                <div class="slider-container swiper">
                     <div class="slider-wrapper">
-                        <ul class="testimonials-list">
-                            <li class="testimonials">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonials swiper-slide">
                                 <img src="images/user-1.jpg" alt="User" class="user-image">
                                 <h3 class="name">Sarah Johnson</h3>
-                                <i class="feedback">"Loved the french roast, Perfectly balanced and rich.will order again"</i>
+                                <i class="feedback">"Loved the french roast, Perfectly balanced and rich.will order again!"</i>
                             </li>
-                            <li class="testimonials">
-                                <img src="images/user-1.jpg" alt="User" class="user-image">
-                                <h3 class="name">Sarah Johnson</h3>
-                                <i class="feedback">"Loved the french roast, Perfectly balanced and rich.will order again"</i>
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Jones Wilson</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold flaver, fast shopping!"</i>
                             </li>
-                            <li class="testimonials">
-                                <img src="images/user-1.jpg" alt="User" class="user-image">
-                                <h3 class="name">Sarah Johnson</h3>
-                                <i class="feedback">"Loved the french roast, Perfectly balanced and rich.will order again"</i>
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Michal Brown</h3>
+                                <i class="feedback">"Fantastic mocha flavor, fresh and aromatic , quick shipping!"</i>
                             </li>
-                            <li class="testimonials">
-                                <img src="images/user-1.jpg" alt="User" class="user-image">
-                                <h3 class="name">Sarah Johnson</h3>
-                                <i class="feedback">"Loved the french roast, Perfectly balanced and rich.will order again"</i>
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Emily Marris</h3>
+                                <i class="feedback">"perfect mocha, Highly recommend"</i>
+                            </li>
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried smooth and flaverful. Arrived promptly"</i>
                             </li>
                         </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <!--linking swiper scipt-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!--linking custom scipt-->
     <script src="script.js"></script>
 </body>
 </html>
